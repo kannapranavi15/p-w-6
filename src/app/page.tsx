@@ -3,8 +3,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, Linkedin, Instagram, Facebook, Twitter, Youtube, Play, ChevronLeft, ChevronRight, BookOpen, Award, Users, FileText } from 'lucide-react';
 
-
-
 interface Testimonial {
   name: string;
   type: string;
@@ -17,16 +15,16 @@ const Portfolio: React.FC = () => {
 
   const testimonials: Testimonial[] = [
     {
-      name: "Prof. Department Head",
-      type: "HEAD OF DEPARTMENT, ANNA UNIVERSITY TRICHY",
-      text: "Ms. Kardeepa's dedication to teaching and research during her tenure as Teaching Fellow was exemplary. Her expertise in Machine Learning  makes her a valuable asset to academic institutions.",
-      image: "/image/img1.jpg"
+      name: "Prof. P. Deepalakshmi",
+      type: "DOCTORAL SUPERVISOR, KALASALINGAM ACADEMY",
+      text: "Dr. Chinnasamy's doctoral research on 'Enhanced and Scalable Access Control Mechanisms for Cloud Storage System' demonstrated exceptional technical depth and innovation in cloud security.",
+      image: "img1.jpg"
     },
     {
-      name: "Dr. Research Collaborator", 
-      type: "RESEARCH COLLEAGUE, KARE 2024",
-      text: "Working with Ms. Kardeepa on ML research projects has been rewarding. Her systematic approach to neural networks and spam detection research demonstrates exceptional technical and analytical skills.",
-      image: "/image/img1.jpg"
+      name: "Research Collaborator", 
+      type: "CO-AUTHOR, SPRINGER PUBLICATIONS",
+      text: "Working with Dr. Chinnasamy on blockchain and cloud security research has been highly productive. His systematic approach to cryptographic access control makes him a valuable research partner.",
+      image: "img1.jpg"
     }
   ];
 
@@ -54,17 +52,17 @@ const Portfolio: React.FC = () => {
                 <div className="w-6 h-6 border-2 border-white rounded-sm"></div>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900 tracking-tight">P. Kardeepa</h1>
+                <h1 className="text-xl font-bold text-gray-900 tracking-tight">Dr. P. Chinnasamy</h1>
                 <p className="text-sm text-gray-600 font-medium">Computer Science & Engineering</p>
               </div>
             </div>
             
             {/* Navigation */}
             <nav className="hidden md:flex gap-8">
-              {['About Me', 'Education', 'Teaching', 'Research', 'Achievement', 'Contact'].map((item, index) => (
+              {['About Me', 'Education', 'Experience', 'Research', 'Achievement', 'Contact'].map((item, index) => (
                 <button
                   key={item}
-                  onClick={() => scrollToSection(['about', 'education', 'teaching', 'research', 'achievement', 'contact'][index])}
+                  onClick={() => scrollToSection(['about', 'education', 'experience', 'research', 'achievement', 'contact'][index])}
                   className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-medium relative group"
                 >
                   {item}
@@ -89,24 +87,24 @@ const Portfolio: React.FC = () => {
           <div className="flex items-center justify-between flex-col lg:flex-row gap-12">
             <div className="flex-1 text-center lg:text-left lg:pr-12">
               <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                Hello,  I'm {''}
-                <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                    P.Kardeepa
+                Hello,   I'm  
+                <span >
+                 <h2 className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Dr.P.Chinnasamy</h2>
                 </span>
               </h2>
               <p className="text-xl text-gray-700 font-medium mb-4">
-                Assistant Professor & UGC NET Qualified –
+                Associate Professor & Research Supervisor –
               </p>
               <p className="text-lg text-gray-600">
-                Specializing in Machine Learning, Embedded Systems with 5.5 years of teaching experience.
+                Specializing in Cryptography, Cloud Computing & Access Control with extensive research in cybersecurity and blockchain technology.
               </p>
             </div>
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="relative group">
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                 <img 
-                  src="/image/img1.jpg" 
-                  alt="P. Kardeepa"
+                  src="/img1.jpg" 
+                  alt="Dr. P. Chinnasamy"
                   className="relative w-94 h-120 object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition duration-500"
                 />
               </div>
@@ -122,7 +120,7 @@ const Portfolio: React.FC = () => {
             <div className="relative group">
               <div className="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-blue-200 to-blue-300 rounded-2xl transform group-hover:scale-105 transition duration-500"></div>
               <img 
-                src="/image/img2.png" 
+                src="/img4.png" 
                 alt="Research Lab"
                 className="relative w-full h-96 object-cover rounded-2xl shadow-2xl z-10"
               />
@@ -137,17 +135,17 @@ const Portfolio: React.FC = () => {
                   </span>
                 </h3>
                 <p className="text-xl text-gray-700 font-medium mb-6">
-                  UGC NET Qualified Academic Professional –
+                  Anna University Research Supervisor & Cybersecurity Expert –
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  I'm an Assistant Professor at Kalasalingam Academy of Research and Education with 5.5 years of teaching experience. Qualified National Eligibility Test (UGC NET) for Assistant Professor/Lectureship , demonstrating my academic excellence and commitment to higher education.
+                  I'm an Associate Professor at Kalasalingam Academy of Research and Education with extensive experience in cloud computing security. As a recognized Anna University Research Supervisor (ID: 4140166) in Information and Communication Engineering, I guide doctoral research in cutting-edge cybersecurity domains.
                 </p>
               </div>
               
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">Areas of Expertise:</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-4">Research Specializations:</h4>
                 <div className="grid grid-cols-2 gap-4">
-                  {['Machine Learning', 'Embedded Systems', 'Operating Systems', 'Pervasive Computing'].map((skill, index) => (
+                  {['Cloud Security', 'Cryptography', 'Access Control', 'Blockchain Technology'].map((skill, index) => (
                     <div key={index} className="flex items-center gap-3 group">
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full group-hover:scale-125 transition duration-300"></div>
                       <span className="text-gray-700 group-hover:text-gray-900 transition duration-300">{skill}</span>
@@ -157,20 +155,15 @@ const Portfolio: React.FC = () => {
               </div>
 
               <p className="text-gray-600 leading-relaxed">
-                My research focuses on Machine Learning applications, With 5.5 years of teaching experience including roles at Anna University Trichy and current position at KARE, I bring academic excellence with practical teaching methodologies to guide students in computer science fundamentals and emerging technologies.
+                My doctoral research focused on "Enhanced and Scalable Access Control Mechanisms for Cloud Storage System," contributing significantly to cloud security frameworks. I've published extensively in high-impact journals and conferences, with expertise spanning from hybrid cryptography to AI-enabled IoT systems.
               </p>
 
               <div className="flex gap-4">
-                 <a 
-                   href="/image/pd1.pdf"  // path to your PDF in public/
-                  target="_blank"     // opens in new tab
-                   rel="noopener noreferrer"
-                 >
-              <button className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-               View Resume
-              </button>
-               </a>
-                
+                <a href="/pd.pdf">
+                <button className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  View CV
+                </button>
+              </a>
               </div>
             </div>
           </div>
@@ -182,22 +175,28 @@ const Portfolio: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h3 className="text-5xl font-bold text-gray-900 mb-4">Educational Journey</h3>
-            <p className="text-xl text-gray-600">Academic Qualifications & Professional Development</p>
+            <p className="text-xl text-gray-600">Academic Qualifications & Research Excellence</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                year: "2014",
-                title: "M.E. Pervasive Computing Technology",
-                description: "University College of Engineering (BIT CAMPUS), Anna University, Trichy. CGPA: 8.14. Advanced studies in pervasive computing and embedded systems.",
-                label: "01 \\ MASTER'S DEGREE"
+                year: "2019",
+                title: "Ph.D. Computer Science & Engineering",
+                description: "Kalasalingam Academy of Research and Education. Thesis: 'Design of Enhanced and Scalable Access Control Mechanisms for Cloud Storage System' under Prof. P. Deepalakshmi",
+                label: "01 \\ DOCTORAL DEGREE"
+              },
+              {
+                year: "2015",
+                title: "M.Tech Computer Science & Engineering", 
+                description: "Kalasalingam University. CGPA: 9.45/10. Thesis: 'Providing Resilience on Cloud Computing' under Prof. S. Radhakrishnan",
+                label: "02 \\ MASTER'S DEGREE"
               },
               {
                 year: "2011",
-                title: "B.E. Information Technology", 
-                description: "Avinashilingam University for Women, Coimbatore. CGPA: 8.45. Strong foundation in information technology and computer science.",
-                label: "02 \\ BACHELOR'S DEGREE"
+                title: "B.E. Computer Science & Engineering",
+                description: "Dhanalakshmi College of Engineering, Anna University, Chennai. Percentage: 80%. Project: 'Intranet Chat Messenger'",
+                label: "03 \\ BACHELOR'S DEGREE"
               }
             ].map((item, index) => (
               <div key={index} className="text-center group">
@@ -219,12 +218,12 @@ const Portfolio: React.FC = () => {
         </div>
       </section>
 
-      {/* Teaching Section */}
-      <section id="teaching" className="py-20 bg-gradient-to-br from-emerald-50 to-green-100">
+      {/* Professional Experience Section */}
+      <section id="experience" className="py-20 bg-gradient-to-br from-emerald-50 to-green-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h3 className="text-5xl font-bold text-gray-900 mb-4">Professional Experience</h3>
-            <p className="text-xl text-gray-600">Academic & Teaching Experience</p>
+            <p className="text-xl text-gray-600">Academic Leadership & Industry Experience</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -240,17 +239,17 @@ const Portfolio: React.FC = () => {
                     <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
                       Current Position
                     </span>
-                    <span className="text-gray-500 text-sm">Feb 2023 - Present</span>
+                    <span className="text-gray-500 text-sm">June 2024 - Present</span>
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition duration-300">
-                    Assistant Professor
+                    Associate Professor
                   </h4>
                   <p className="text-gray-600 text-lg font-medium mb-2">Kalasalingam Academy of Research and Education</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Teaching computer science courses, conducting research in ML , serving as Women Empowerment Cell Member and ACM-W Professional Member.
+                    Leading research initiatives in cloud security and cryptography. Anna University Research Supervisor guiding doctoral candidates in ICE domain.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['Machine Learning', 'IoT Teaching', 'Research Guidance', 'ACM-W Member'].map((subject, index) => (
+                    {['Research Supervision', 'Cloud Security', 'Ph.D. Guidance', 'Patent Development'].map((subject, index) => (
                       <span key={index} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-sm font-medium">
                         {subject}
                       </span>
@@ -260,29 +259,29 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
 
-            {/* Teaching Fellow */}
+            {/* Previous Academic Role */}
             <div className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-green-600"></div>
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-500">
-                  <span className="text-white font-bold text-sm">AUT</span>
+                  <span className="text-white font-bold text-sm">MLR</span>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
-                      Teaching Fellow
+                      Associate Professor
                     </span>
-                    <span className="text-gray-500 text-sm">June 2016 - Dec 2018</span>
+                    <span className="text-gray-500 text-sm">Aug 2021 - June 2024</span>
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition duration-300">
-                    Teaching Fellow
+                    Associate Professor
                   </h4>
-                  <p className="text-gray-600 text-lg font-medium mb-2">Anna University, BIT Campus, Trichy (Faculty ID: 8100267)</p>
+                  <p className="text-gray-600 text-lg font-medium mb-2">MLR Institute of Technology, Hyderabad</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Department of Computer Applications. Extensive teaching experience, project guidance for UG & PG students, and timetable coordination responsibilities.
+                    Advanced research in blockchain technology and cybersecurity. Published extensively in high-impact journals and conferences.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['Project Guidance', 'Timetable Coordination', 'UG/PG Mentoring', 'Research Support'].map((subject, index) => (
+                    {['Blockchain Research', 'Cybersecurity', 'Journal Publications', 'Conference Papers'].map((subject, index) => (
                       <span key={index} className="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-lg text-sm font-medium">
                         {subject}
                       </span>
@@ -292,29 +291,29 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
 
-            {/* Teaching Assistantship */}
+            {/* Early Academic Role */}
             <div className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-600"></div>
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-500">
-                  <span className="text-white font-bold text-sm">TEQIP</span>
+                  <span className="text-white font-bold text-sm">SIET</span>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
-                      TEQIP-II Program
+                      Assistant Professor
                     </span>
-                    <span className="text-gray-500 text-sm">2013-2014</span>
+                    <span className="text-gray-500 text-sm">Jan 2019 - Apr 2021</span>
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition duration-300">
-                    Teaching Assistantship
+                    Assistant Professor
                   </h4>
-                  <p className="text-gray-600 text-lg font-medium mb-2">Technical Education Quality Improvement Programme (TEQIP-II)</p>
+                  <p className="text-gray-600 text-lg font-medium mb-2">Sri Shakthi Institute of Engineering and Technology, Coimbatore</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Selected by NPIU, New Delhi for Teaching Assistantship under Government of India's National Project Implementation Unit program.
+                    Started academic career post-PhD, establishing research foundations in cloud security and access control mechanisms.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['GOI Selection', 'NPIU Program', 'Quality Enhancement', 'Academic Excellence'].map((subject, index) => (
+                    {['Post-PhD Teaching', 'Research Foundation', 'Cloud Computing', 'Access Control'].map((subject, index) => (
                       <span key={index} className="bg-purple-50 text-purple-700 px-3 py-1 rounded-lg text-sm font-medium">
                         {subject}
                       </span>
@@ -324,59 +323,34 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
 
-            {/* UGC NET Qualification */}
+            {/* Industry Experience */}
             <div className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-red-600"></div>
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-500">
-                  <span className="text-white font-bold text-sm">NET</span>
+                  <span className="text-white font-bold text-sm">IND</span>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
-                      National Qualification
+                      Industry Experience
                     </span>
-                    <span className="text-gray-500 text-sm">2021 & 2022</span>
+                    <span className="text-gray-500 text-sm">2012 - 2013</span>
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition duration-300">
-                    UGC NET Qualified
+                    Software Professional
                   </h4>
-                  <p className="text-gray-600 text-lg font-medium mb-2">National Eligibility Test for Assistant Professor/Lectureship</p>
+                  <p className="text-gray-600 text-lg font-medium mb-2">Process Global Inc, Chennai & New Image Computer Education</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Qualified NTA UGC NET , demonstrating academic excellence and eligibility for higher education roles.
+                    Developed desktop applications and web solutions. Gained practical experience in software development and training.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['NTA UGC NET', 'Academic Excellence', 'Teaching Eligibility', 'Research Qualification'].map((subject, index) => (
+                    {['Software Development', 'Web Applications', 'Training', 'Project Management'].map((subject, index) => (
                       <span key={index} className="bg-orange-50 text-orange-700 px-3 py-1 rounded-lg text-sm font-medium">
                         {subject}
                       </span>
                     ))}
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Teaching Philosophy */}
-          <div className="mt-16 bg-white rounded-3xl p-12 shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-emerald-400 to-purple-400"></div>
-            <div className="text-center">
-              <h4 className="text-3xl font-bold text-gray-900 mb-6">Professional Philosophy</h4>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-                "I believe in combining theoretical knowledge with practical hands-on experience to provide comprehensive learning. My approach emphasizes project-based learning in Machine Learning, encouraging innovation while building strong foundations in computer science fundamentals through systematic teaching methodologies."
-              </p>
-              <div className="mt-8 flex justify-center gap-8 text-center">
-                <div className="group">
-                  <div className="text-4xl font-bold text-blue-600 mb-2 group-hover:scale-110 transition duration-300">5.5+</div>
-                  <p className="text-gray-600 font-medium">Years Teaching</p>
-                </div>
-                <div className="group">
-                  <div className="text-4xl font-bold text-emerald-600 mb-2 group-hover:scale-110 transition duration-300">9</div>
-                  <p className="text-gray-600 font-medium">Research Publications</p>
-                </div>
-                <div className="group">
-                  <div className="text-4xl font-bold text-purple-600 mb-2 group-hover:scale-110 transition duration-300">2</div>
-                  <p className="text-gray-600 font-medium">Book Publications</p>
                 </div>
               </div>
             </div>
@@ -388,30 +362,30 @@ const Portfolio: React.FC = () => {
       <section id="research" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h3 className="text-5xl font-bold text-gray-900 mb-4">Research Contributions</h3>
+            <h3 className="text-5xl font-bold text-gray-900 mb-4">Research Excellence</h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Research in Machine Learning, spam detection with focus on practical implementations.
+              Leading research in cloud security, cryptography, and blockchain technology with extensive publications and international collaborations.
             </p>
           </div>
           
-          {/* Machine Learning & Spam Detection Research */}
+          {/* High Impact Publications */}
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden mb-12 group hover:shadow-blue-200/50 transition duration-700">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative overflow-hidden">
                 <img 
-                  src="/image/img3.png" 
-                  alt="Machine Learning Research"
+                  src="/img2.png" 
+                  alt="Cloud Security Research"
                   className="w-full h-96 object-cover group-hover:scale-105 transition duration-700"
                 />
               </div>
               <div className="p-12">
-                <p className="text-sm text-gray-500 mb-2 font-semibold tracking-wide">01 / RECENT PUBLICATIONS</p>
-                <h4 className="text-3xl font-bold text-gray-900 mb-6">Advanced ML & Neural Network Research</h4>
+                <p className="text-sm text-gray-500 mb-2 font-semibold tracking-wide">01 / HIGH IMPACT PUBLICATIONS</p>
+                <h4 className="text-3xl font-bold text-gray-900 mb-6">Cloud Security & Cryptography Research</h4>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  Extensive research in spam detection using Twitter data, Random Group Coupled Neural Networks for fake news detection, and brain tumor classification using CNN and Vision Transformers.
+                  Published 19 high-impact journal papers including SCI-indexed publications in Springer, IEEE, and MDPI journals. Research focuses on hybrid cryptographic access control, blockchain security, and AI-enabled IoT systems.
                 </p>
                 <div className="space-y-3">
-                  {['IEEE Conference Publications (2023-2025)', 'RGCNN Implementation', 'CNN & ViT for Medical Applications', 'Social Media Data Analysis'].map((achievement, index) => (
+                  {['19 SCIE Journal Publications', 'Springer & IEEE Transactions', 'Impact Factors up to 7.104', 'International Collaborations'].map((achievement, index) => (
                     <div key={index} className="flex items-center gap-3 group/skill">
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full group-hover/skill:scale-125 transition duration-300"></div>
                       <span className="text-gray-700 font-medium">{achievement}</span>
@@ -422,17 +396,17 @@ const Portfolio: React.FC = () => {
             </div>
           </div>
 
-          {/* IoT & Embedded Systems Research */}
+          {/* Research Supervision & Grants */}
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden group hover:shadow-blue-200/50 transition duration-700">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="p-12 order-2 lg:order-1">
-                <p className="text-sm text-gray-500 mb-2 font-semibold tracking-wide">02 / BOOK PUBLICATIONS & INNOVATIONS</p>
-                <h4 className="text-3xl font-bold text-gray-900 mb-6">IoT & Embedded Systems</h4>
+                <p className="text-sm text-gray-500 mb-2 font-semibold tracking-wide">02 / RESEARCH SUPERVISION & GRANTS</p>
+                <h4 className="text-3xl font-bold text-gray-900 mb-6">Doctoral Supervision & Funded Projects</h4>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  Author and co-author of significant publications on Embedded Systems & IoT, and comprehensive handbook on Machine Learning Techniques covering concepts and algorithms.
+                  Currently supervising 6 PhD scholars in AI, cybersecurity, and deep learning domains. Co-PI on international funded project with UTAR Malaysia focusing on multimodal machine learning for healthcare applications.
                 </p>
                 <div className="space-y-3">
-                  {['Book: Embedded Systems and IOT (2024)', 'Book: ML Techniques Handbook (2024)'].map((achievement, index) => (
+                  {['6 PhD Scholars Under Guidance', 'UTAR Malaysia Collaboration (RM24,000)', 'Anna University Research Supervisor', 'AI & Cybersecurity Focus Areas'].map((achievement, index) => (
                     <div key={index} className="flex items-center gap-3 group/skill">
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full group-hover/skill:scale-125 transition duration-300"></div>
                       <span className="text-gray-700 font-medium">{achievement}</span>
@@ -442,36 +416,31 @@ const Portfolio: React.FC = () => {
               </div>
               <div className="relative overflow-hidden order-1 lg:order-2">
                 <img 
-                  src="/image/img4.png" 
-                  alt="IoT Research"
+                  src="/img3.png" 
+                  alt="Research Supervision"
                   className="w-full h-96 object-cover group-hover:scale-105 transition duration-700"
                 />
               </div>
             </div>
           </div>
 
-          {/* Research Profiles */}
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Research Statistics */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">Recent Publications</h4>
-              <div className="space-y-4 text-sm text-gray-600">
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <p className="font-semibold text-blue-700 mb-2">IEEE Conferences (2023-2025)</p>
-                  <p>• RGCNN: Fake News Detection</p>
-                  <p>• Brain Tumor Detection using CNN & ViT</p>
-                  <p>• Twitter Spam Detection</p>
-                </div>
-              </div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">19</div>
+              <p className="text-gray-600 font-medium">SCIE Publications</p>
             </div>
-            
             <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">Professional Development</h4>
-              <div className="space-y-2 text-sm text-gray-600">
-                <p>• ACM-W Student Chapter Member (Chapter ID: 180857)</p>
-                <p>• Women Empowerment Cell Member (2024-2025)</p>
-                <p>• NPTEL Certification (IoT ) </p>
-               
-              </div>
+              <div className="text-4xl font-bold text-emerald-600 mb-2">16</div>
+              <p className="text-gray-600 font-medium">Scopus Publications</p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
+              <div className="text-4xl font-bold text-purple-600 mb-2">67</div>
+              <p className="text-gray-600 font-medium">Conference Papers</p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
+              <div className="text-4xl font-bold text-orange-600 mb-2">12</div>
+              <p className="text-gray-600 font-medium">Book Chapters</p>
             </div>
           </div>
         </div>
@@ -481,8 +450,8 @@ const Portfolio: React.FC = () => {
       <section id="achievement" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h3 className="text-5xl font-bold text-gray-900 mb-4">Recognition & Awards</h3>
-            <p className="text-xl text-gray-600">Testimonials from colleagues and collaborators</p>
+            <h3 className="text-5xl font-bold text-gray-900 mb-4">Professional Recognition</h3>
+            <p className="text-xl text-gray-600">Awards, fellowships and professional achievements</p>
           </div>
           
           <div className="relative">
@@ -535,26 +504,26 @@ const Portfolio: React.FC = () => {
               {[
                 {
                   icon: Award,
-                  title: "UGC NET Qualified",
-                  description: "Assistant Professor/Lectureship",
+                  title: "Cybersecurity Innovator",
+                  description: "CSI Mumbai Chapter - Lifetime Award",
                   color: "from-yellow-400 to-yellow-600"
                 },
                 {
                   icon: FileText,
-                  title: "9 Publications",
-                  description: "IEEE conferences & journals",
+                  title: "15 Patents",
+                  description: "Granted & Published Patents",
                   color: "from-blue-400 to-blue-600"
                 },
                 {
                   icon: BookOpen,
-                  title: "2 Book Publications",
-                  description: "Embedded Systems & ML Handbook",
+                  title: "Senior Research Associate",
+                  description: "UTAR Malaysia (2024-2026)",
                   color: "from-emerald-400 to-emerald-600"
                 },
                 {
                   icon: Users,
-                  title: "ACM-W Member",
-                  description: "Professional society membership",
+                  title: "Research Supervisor",
+                  description: "Anna University ICE Domain",
                   color: "from-purple-400 to-purple-600"
                 }
               ].map((achievement, index) => (
@@ -588,14 +557,14 @@ const Portfolio: React.FC = () => {
               {
                 icon: Mail,
                 label: "EMAIL –",
-                value: "kardeepa91@gmail.com",
-                href: "mailto:kardeepa91@gmail.com"
+                value: "chinnasamyponnusamy@gmail.com",
+                href: "mailto:chinnasamyponnusamy@gmail.com"
               },
               {
                 icon: Phone,
                 label: "MOBILE –",
-                value: "+91 9787303000",
-                href: "tel:+919787303000"
+                value: "+91 9600281664",
+                href: "tel:+919600281664"
               },
               {
                 icon: BookOpen,
@@ -626,10 +595,14 @@ const Portfolio: React.FC = () => {
           <div className="mt-16 bg-white rounded-3xl p-12 shadow-2xl text-center">
             <h4 className="text-2xl font-bold text-gray-900 mb-6">Office Address</h4>
             <div className="space-y-2 text-gray-600">
-              <p className="font-semibold">School of Computing</p>
+              <p className="font-semibold">Department of Computer Science and Engineering</p>
               <p>Kalasalingam Academy of Research and Education</p>
               <p>Anand Nagar, Krishnankoil – 626 126</p>
               <p>Tamil Nadu, India</p>
+            </div>
+            <div className="mt-6 pt-6 border-t border-gray-200">
+              <p className="text-sm text-gray-500 mb-2">Research Supervisor ID: 4140166</p>
+              <p className="text-sm text-gray-500">Anna University - Information and Communication Engineering</p>
             </div>
           </div>
         </div>
@@ -644,39 +617,38 @@ const Portfolio: React.FC = () => {
                 <div className="w-6 h-6 border-2 border-white rounded-sm"></div>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-gray-900">P. Kardeepa</h4>
+                <h4 className="text-lg font-bold text-gray-900">Dr. P. Chinnasamy</h4>
                 <p className="text-sm text-gray-600">Computer Science & Engineering</p>
               </div>
             </div>
             
-            <div className="flex gap-4">
-               {[Mail, Phone, Linkedin].map((Icon, index) => (
+<div className="flex gap-4">
+  {[Mail, Phone, Linkedin].map((Icon, index) => (
     Icon === Linkedin ? (
       <a
         key={index}
-        href="https://www.linkedin.com/in/p-kardeepa-cse-684a51306 "
+        href="https://www.linkedin.com/in/dr-p-chinnasamy-52674b3b " // 🔗 replace with your LinkedIn profile
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 bg-gray-100 hover:bg-blue-100 rounded-full flex items-center justify-center transition duration-300 cursor-pointer group"
       >
-             <Icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition duration-300" />
-                   </a>
-                ) : (
-                <div
-                key={index}
-                className="w-12 h-12 bg-gray-100 hover:bg-blue-100 rounded-full flex items-center justify-center transition duration-300 cursor-pointer group"
-                >
-                <Icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition duration-300" />
-            </div>
-          )
-          ))}
-
-            </div>
+        <Icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition duration-300" />
+      </a>
+    ) : (
+      <div
+        key={index}
+        className="w-12 h-12 bg-gray-100 hover:bg-blue-100 rounded-full flex items-center justify-center transition duration-300 cursor-pointer group"
+      >
+        <Icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition duration-300" />
+      </div>
+    )
+  ))}
+</div>
           </div>
           
           <div className="flex justify-between items-center text-sm text-gray-500 pt-8 border-t border-gray-200">
-            <span>© 2024 P. Kardeepa. All rights reserved.</span>
-            <span>Teaching • Research • Innovation</span>
+            <span>© 2024 Dr. P. Chinnasamy. All rights reserved.</span>
+            <span>Research • Innovation • Excellence</span>
           </div>
         </div>
       </footer>
