@@ -19,7 +19,7 @@ const Portfolio: React.FC = () => {
     {
       name: "Prof. Department Head",
       type: "HEAD OF DEPARTMENT, ANNA UNIVERSITY TRICHY",
-      text: "Ms. Kardeepa's dedication to teaching and research during her tenure as Teaching Fellow was exemplary. Her expertise in Machine Learning and IoT applications makes her a valuable asset to academic institutions.",
+      text: "Ms. Kardeepa's dedication to teaching and research during her tenure as Teaching Fellow was exemplary. Her expertise in Machine Learning  makes her a valuable asset to academic institutions.",
       image: "/image/img1.jpg"
     },
     {
@@ -89,16 +89,16 @@ const Portfolio: React.FC = () => {
           <div className="flex items-center justify-between flex-col lg:flex-row gap-12">
             <div className="flex-1 text-center lg:text-left lg:pr-12">
               <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                Hello, I'm{'  '}
+                Hello,  I'm {''}
                 <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                  P. Kardeepa
+                    P.Kardeepa
                 </span>
               </h2>
               <p className="text-xl text-gray-700 font-medium mb-4">
                 Assistant Professor & UGC NET Qualified –
               </p>
               <p className="text-lg text-gray-600">
-                Specializing in Machine Learning, Embedded Systems, and IoT with 5.5 years of teaching experience.
+                Specializing in Machine Learning, Embedded Systems with 5.5 years of teaching experience.
               </p>
             </div>
             <div className="flex-1 flex justify-center lg:justify-end">
@@ -140,14 +140,14 @@ const Portfolio: React.FC = () => {
                   UGC NET Qualified Academic Professional –
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  I'm an Assistant Professor at Kalasalingam Academy of Research and Education with 5.5 years of teaching experience. Qualified National Eligibility Test (UGC NET) for Assistant Professor/Lectureship in Dec. 2021 & June 2022 merged cycles, demonstrating my academic excellence and commitment to higher education.
+                  I'm an Assistant Professor at Kalasalingam Academy of Research and Education with 5.5 years of teaching experience. Qualified National Eligibility Test (UGC NET) for Assistant Professor/Lectureship , demonstrating my academic excellence and commitment to higher education.
                 </p>
               </div>
               
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Areas of Expertise:</h4>
                 <div className="grid grid-cols-2 gap-4">
-                  {['Machine Learning', 'Embedded Systems', 'Internet of Things (IoT)', 'Operating Systems', 'Pervasive Computing', 'Data Analysis'].map((skill, index) => (
+                  {['Machine Learning', 'Embedded Systems', 'Operating Systems', 'Pervasive Computing'].map((skill, index) => (
                     <div key={index} className="flex items-center gap-3 group">
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full group-hover:scale-125 transition duration-300"></div>
                       <span className="text-gray-700 group-hover:text-gray-900 transition duration-300">{skill}</span>
@@ -157,12 +157,12 @@ const Portfolio: React.FC = () => {
               </div>
 
               <p className="text-gray-600 leading-relaxed">
-                My research focuses on Machine Learning applications, Internet of Things (IoT), and Embedded Systems. With 5.5 years of teaching experience including roles at Anna University Trichy and current position at KARE, I bring academic excellence with practical teaching methodologies to guide students in computer science fundamentals and emerging technologies.
+                My research focuses on Machine Learning applications, With 5.5 years of teaching experience including roles at Anna University Trichy and current position at KARE, I bring academic excellence with practical teaching methodologies to guide students in computer science fundamentals and emerging technologies.
               </p>
 
               <div className="flex gap-4">
                  <a 
-                   href="/image/pd.pdf"  // path to your PDF in public/
+                   href="/image/pd1.pdf"  // path to your PDF in public/
                   target="_blank"     // opens in new tab
                    rel="noopener noreferrer"
                  >
@@ -247,7 +247,7 @@ const Portfolio: React.FC = () => {
                   </h4>
                   <p className="text-gray-600 text-lg font-medium mb-2">Kalasalingam Academy of Research and Education</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Teaching computer science courses, conducting research in ML and IoT, serving as Women Empowerment Cell Member and ACM-W Professional Member.
+                    Teaching computer science courses, conducting research in ML , serving as Women Empowerment Cell Member and ACM-W Professional Member.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {['Machine Learning', 'IoT Teaching', 'Research Guidance', 'ACM-W Member'].map((subject, index) => (
@@ -343,7 +343,7 @@ const Portfolio: React.FC = () => {
                   </h4>
                   <p className="text-gray-600 text-lg font-medium mb-2">National Eligibility Test for Assistant Professor/Lectureship</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Qualified NTA UGC NET in Dec. 2021 & June 2022 merged cycles, demonstrating academic excellence and eligibility for higher education roles.
+                    Qualified NTA UGC NET , demonstrating academic excellence and eligibility for higher education roles.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {['NTA UGC NET', 'Academic Excellence', 'Teaching Eligibility', 'Research Qualification'].map((subject, index) => (
@@ -363,7 +363,7 @@ const Portfolio: React.FC = () => {
             <div className="text-center">
               <h4 className="text-3xl font-bold text-gray-900 mb-6">Professional Philosophy</h4>
               <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
-                "I believe in combining theoretical knowledge with practical hands-on experience to provide comprehensive learning. My approach emphasizes project-based learning in Machine Learning, IoT, and Embedded Systems, encouraging innovation while building strong foundations in computer science fundamentals through systematic teaching methodologies."
+                "I believe in combining theoretical knowledge with practical hands-on experience to provide comprehensive learning. My approach emphasizes project-based learning in Machine Learning, encouraging innovation while building strong foundations in computer science fundamentals through systematic teaching methodologies."
               </p>
               <div className="mt-8 flex justify-center gap-8 text-center">
                 <div className="group">
@@ -390,7 +390,7 @@ const Portfolio: React.FC = () => {
           <div className="text-center mb-16">
             <h3 className="text-5xl font-bold text-gray-900 mb-4">Research Contributions</h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Research in Machine Learning, IoT applications, spam detection, and neural networks with focus on practical implementations.
+              Research in Machine Learning, spam detection with focus on practical implementations.
             </p>
           </div>
           
@@ -432,7 +432,7 @@ const Portfolio: React.FC = () => {
                   Author and co-author of significant publications on Embedded Systems & IoT, and comprehensive handbook on Machine Learning Techniques covering concepts and algorithms.
                 </p>
                 <div className="space-y-3">
-                  {['Book: Embedded Systems and IOT (2024)', 'Book: ML Techniques Handbook (2024)', 'IoT Applications Research', 'Educational Content Development'].map((achievement, index) => (
+                  {['Book: Embedded Systems and IOT (2024)', 'Book: ML Techniques Handbook (2024)'].map((achievement, index) => (
                     <div key={index} className="flex items-center gap-3 group/skill">
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full group-hover/skill:scale-125 transition duration-300"></div>
                       <span className="text-gray-700 font-medium">{achievement}</span>
@@ -467,11 +467,10 @@ const Portfolio: React.FC = () => {
             <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
               <h4 className="text-2xl font-bold text-gray-900 mb-4">Professional Development</h4>
               <div className="space-y-2 text-sm text-gray-600">
-                <p>• ACM-W Student Chapter Member (ID: 180857)</p>
+                <p>• ACM-W Student Chapter Member (Chapter ID: 180857)</p>
                 <p>• Women Empowerment Cell Member (2024-2025)</p>
-                <p>• IoT NPTEL Certification (Score: 78)</p>
-                <p>• Machine Learning FDP by IBM Experts</p>
-                <p>• Generative AI FDP Programs</p>
+                <p>• NPTEL Certification (IoT ) </p>
+               
               </div>
             </div>
           </div>
@@ -537,7 +536,7 @@ const Portfolio: React.FC = () => {
                 {
                   icon: Award,
                   title: "UGC NET Qualified",
-                  description: "Dec 2021 & June 2022 cycles",
+                  description: "Assistant Professor/Lectureship",
                   color: "from-yellow-400 to-yellow-600"
                 },
                 {
