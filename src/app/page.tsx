@@ -15,15 +15,15 @@ const Portfolio: React.FC = () => {
 
   const testimonials: Testimonial[] = [
     {
-      name: "Prof. P. Deepalakshmi",
-      type: "DOCTORAL SUPERVISOR, KALASALINGAM ACADEMY",
-      text: "Dr. Chinnasamy's doctoral research on 'Enhanced and Scalable Access Control Mechanisms for Cloud Storage System' demonstrated exceptional technical depth and innovation in cloud security.",
+      name: "Research Supervisor",
+      type: "KALASALINGAM ACADEMY OF RESEARCH AND EDUCATION",
+      text: "Mr. Surendiran's research work in federated learning and autonomous vehicle systems demonstrates exceptional technical depth and innovation in emerging AI technologies.",
       image: "img1.jpg"
     },
     {
-      name: "Research Collaborator", 
-      type: "CO-AUTHOR, SPRINGER PUBLICATIONS",
-      text: "Working with Dr. Chinnasamy on blockchain and cloud security research has been highly productive. His systematic approach to cryptographic access control makes him a valuable research partner.",
+      name: "Industry Collaborator", 
+      type: "NSTL & IIT INDORE PROJECTS",
+      text: "Working with Mr. Surendiran on autonomous surface vehicles and bio-mimics robotics has been highly productive. His expertise in embedded systems makes him a valuable research partner.",
       image: "img1.jpg"
     }
   ];
@@ -52,8 +52,8 @@ const Portfolio: React.FC = () => {
                 <div className="w-6 h-6 border-2 border-white rounded-sm"></div>
               </div>
               <div>
-                <h1 className="text-xl font-bold text-gray-900 tracking-tight">Dr. P. Chinnasamy</h1>
-                <p className="text-sm text-gray-600 font-medium">Computer Science & Engineering</p>
+                <h1 className="text-xl font-bold text-gray-900 tracking-tight">D. Surendiran Muthukumar</h1>
+                <p className="text-sm text-gray-600 font-medium">Assistant Professor & Research Scholar</p>
               </div>
             </div>
             
@@ -87,16 +87,16 @@ const Portfolio: React.FC = () => {
           <div className="flex items-center justify-between flex-col lg:flex-row gap-12">
             <div className="flex-1 text-center lg:text-left lg:pr-12">
               <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                Hello,   I'm  
-                <span >
-                 <h2 className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Dr.P.Chinnasamy</h2>
+                Hello, I'm  
+                <span>
+                 <h2 className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">D. Surendiran Muthukumar</h2>
                 </span>
               </h2>
               <p className="text-xl text-gray-700 font-medium mb-4">
-                Associate Professor & Research Supervisor –
+                Assistant Professor & PhD Research Scholar –
               </p>
               <p className="text-lg text-gray-600">
-                Specializing in Cryptography, Cloud Computing & Access Control with extensive research in cybersecurity and blockchain technology.
+                Specializing in Algorithm Intelligence Systems, Robotics, and Federated Learning with expertise in autonomous vehicle systems and embedded technologies.
               </p>
             </div>
             <div className="flex-1 flex justify-center lg:justify-end">
@@ -104,7 +104,7 @@ const Portfolio: React.FC = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                 <img 
                   src="/img1.jpg" 
-                  alt="Dr. P. Chinnasamy"
+                  alt="D. Surendiran Muthukumar"
                   className="relative w-94 h-120 object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition duration-500"
                 />
               </div>
@@ -135,17 +135,17 @@ const Portfolio: React.FC = () => {
                   </span>
                 </h3>
                 <p className="text-xl text-gray-700 font-medium mb-6">
-                  Anna University Research Supervisor & Cybersecurity Expert –
+                  Assistant Professor & Research Innovator –
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  I'm an Associate Professor at Kalasalingam Academy of Research and Education with extensive experience in cloud computing security. As a recognized Anna University Research Supervisor (ID: 4140166) in Information and Communication Engineering, I guide doctoral research in cutting-edge cybersecurity domains.
+                  I'm an Assistant Professor at Kalasalingam Academy of Research and Education with extensive experience in algorithm intelligence systems and robotics. Currently pursuing my PhD with research focus on federated learning networks in healthcare, while contributing to cutting-edge projects in autonomous vehicle systems.
                 </p>
               </div>
               
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Research Specializations:</h4>
                 <div className="grid grid-cols-2 gap-4">
-                  {['Cloud Security', 'Cryptography', 'Access Control', 'Blockchain Technology'].map((skill, index) => (
+                  {['Algorithm Intelligence', 'Robotics Systems', 'Federated Learning', 'Autonomous Vehicles'].map((skill, index) => (
                     <div key={index} className="flex items-center gap-3 group">
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full group-hover:scale-125 transition duration-300"></div>
                       <span className="text-gray-700 group-hover:text-gray-900 transition duration-300">{skill}</span>
@@ -155,7 +155,7 @@ const Portfolio: React.FC = () => {
               </div>
 
               <p className="text-gray-600 leading-relaxed">
-                My doctoral research focused on "Enhanced and Scalable Access Control Mechanisms for Cloud Storage System," contributing significantly to cloud security frameworks. I've published extensively in high-impact journals and conferences, with expertise spanning from hybrid cryptography to AI-enabled IoT systems.
+                My career objective is to achieve the highest standard through innovation and dedication while simultaneously contributing to organizational growth. I've worked on funded projects from NSTL and IIT Indore, developing autonomous surface vehicles and bio-mimics robots for naval surveillance applications.
               </p>
 
               <div className="flex gap-4">
@@ -163,7 +163,7 @@ const Portfolio: React.FC = () => {
                 <button className="bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                   View CV
                 </button>
-              </a>
+                </a>
               </div>
             </div>
           </div>
@@ -181,26 +181,26 @@ const Portfolio: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                year: "2019",
-                title: "Ph.D. Computer Science & Engineering",
-                description: "Kalasalingam Academy of Research and Education. Thesis: 'Design of Enhanced and Scalable Access Control Mechanisms for Cloud Storage System' under Prof. P. Deepalakshmi",
+                year: "Pursuing",
+                title: "Ph.D. Computer Science",
+                description: "Kalasalingam Academy of Research and Education. Research focus on Advanced Algorithm Intelligence Systems and Federated Learning Networks in Healthcare Industry",
                 label: "01 \\ DOCTORAL DEGREE"
               },
               {
                 year: "2015",
-                title: "M.Tech Computer Science & Engineering", 
-                description: "Kalasalingam University. CGPA: 9.45/10. Thesis: 'Providing Resilience on Cloud Computing' under Prof. S. Radhakrishnan",
+                title: "M.E. Computer Science & Engineering", 
+                description: "Gojan School of Business and Technology, Chennai. Percentage: 89.4%. Advanced studies in computer science and engineering with focus on research methodologies",
                 label: "02 \\ MASTER'S DEGREE"
               },
               {
                 year: "2011",
-                title: "B.E. Computer Science & Engineering",
-                description: "Dhanalakshmi College of Engineering, Anna University, Chennai. Percentage: 80%. Project: 'Intranet Chat Messenger'",
+                title: "B.Tech Information Technology",
+                description: "Anna University of Technology, Tiruchirappalli. CGPA: 6.72/10. Project work in software development and programming technologies",
                 label: "03 \\ BACHELOR'S DEGREE"
               }
             ].map((item, index) => (
               <div key={index} className="text-center group">
-                <div className="text-8xl font-bold bg-gradient-to-br from-blue-200 to-blue-300 bg-clip-text text-transparent mb-6 group-hover:from-blue-300 group-hover:to-blue-400 transition duration-500">
+                <div className="text-7xl font-bold bg-gradient-to-br from-blue-200 to-blue-300 bg-clip-text text-transparent mb-6 group-hover:from-blue-300 group-hover:to-blue-400 transition duration-500">
                   {item.year}
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition duration-300">
@@ -239,17 +239,17 @@ const Portfolio: React.FC = () => {
                     <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
                       Current Position
                     </span>
-                    <span className="text-gray-500 text-sm">June 2024 - Present</span>
+                    <span className="text-gray-500 text-sm">July 2022 - Present</span>
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition duration-300">
-                    Associate Professor
+                    Assistant Professor
                   </h4>
                   <p className="text-gray-600 text-lg font-medium mb-2">Kalasalingam Academy of Research and Education</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Leading research initiatives in cloud security and cryptography. Anna University Research Supervisor guiding doctoral candidates in ICE domain.
+                    Teaching Algorithm Intelligence Systems, Design and Analysis of Algorithms, Object Oriented Programming with Java, and Data Structures. Leading research in federated learning and autonomous systems.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['Research Supervision', 'Cloud Security', 'Ph.D. Guidance', 'Patent Development'].map((subject, index) => (
+                    {['Algorithm Intelligence', 'Java Programming', 'Data Structures', 'Software Engineering'].map((subject, index) => (
                       <span key={index} className="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-sm font-medium">
                         {subject}
                       </span>
@@ -264,24 +264,24 @@ const Portfolio: React.FC = () => {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-green-600"></div>
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-500">
-                  <span className="text-white font-bold text-sm">MLR</span>
+                  <span className="text-white font-bold text-sm">TMI</span>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
-                      Associate Professor
+                      Senior Lecturer
                     </span>
-                    <span className="text-gray-500 text-sm">Aug 2021 - June 2024</span>
+                    <span className="text-gray-500 text-sm">June 2019 - July 2022</span>
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition duration-300">
-                    Associate Professor
+                    Senior Lecturer
                   </h4>
-                  <p className="text-gray-600 text-lg font-medium mb-2">MLR Institute of Technology, Hyderabad</p>
+                  <p className="text-gray-600 text-lg font-medium mb-2">Thai Moogambigai Polytechnic College, Chennai</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Advanced research in blockchain technology and cybersecurity. Published extensively in high-impact journals and conferences.
+                    Advanced teaching role with research responsibilities. Conducted workshops on Python programming and software testing methodologies. Active research in autonomous vehicle systems.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['Blockchain Research', 'Cybersecurity', 'Journal Publications', 'Conference Papers'].map((subject, index) => (
+                    {['Python Programming', 'Software Testing', 'Research Projects', 'Workshop Conduct'].map((subject, index) => (
                       <span key={index} className="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-lg text-sm font-medium">
                         {subject}
                       </span>
@@ -291,29 +291,29 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
 
-            {/* Early Academic Role */}
+            {/* Research Consultant Role */}
             <div className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-pink-600"></div>
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-500">
-                  <span className="text-white font-bold text-sm">SIET</span>
+                  <span className="text-white font-bold text-sm">MGR</span>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
-                      Assistant Professor
+                      Research Consultant
                     </span>
-                    <span className="text-gray-500 text-sm">Jan 2019 - Apr 2021</span>
+                    <span className="text-gray-500 text-sm">Feb 2018 - June 2019</span>
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition duration-300">
-                    Assistant Professor
+                    Research Consultant
                   </h4>
-                  <p className="text-gray-600 text-lg font-medium mb-2">Sri Shakthi Institute of Engineering and Technology, Coimbatore</p>
+                  <p className="text-gray-600 text-lg font-medium mb-2">Dr. M.G.R Educational and Research Institute, Chennai</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Started academic career post-PhD, establishing research foundations in cloud security and access control mechanisms.
+                    Led research projects on autonomous surface vehicles and underwater robotics. Collaborated with NSTL and IIT Indore on advanced robotics systems for naval applications.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['Post-PhD Teaching', 'Research Foundation', 'Cloud Computing', 'Access Control'].map((subject, index) => (
+                    {['Autonomous Vehicles', 'Underwater Robotics', 'Naval Systems', 'Research Leadership'].map((subject, index) => (
                       <span key={index} className="bg-purple-50 text-purple-700 px-3 py-1 rounded-lg text-sm font-medium">
                         {subject}
                       </span>
@@ -323,29 +323,29 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
 
-            {/* Industry Experience */}
+            {/* Early Teaching Experience */}
             <div className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition duration-500 hover:-translate-y-2 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-red-600"></div>
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-500">
-                  <span className="text-white font-bold text-sm">IND</span>
+                  <span className="text-white font-bold text-sm">AMS</span>
                 </div>
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide">
-                      Industry Experience
+                      Lecturer
                     </span>
-                    <span className="text-gray-500 text-sm">2012 - 2013</span>
+                    <span className="text-gray-500 text-sm">June 2012 - May 2013, June 2015 - Feb 2018</span>
                   </div>
                   <h4 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition duration-300">
-                    Software Professional
+                    Lecturer
                   </h4>
-                  <p className="text-gray-600 text-lg font-medium mb-2">Process Global Inc, Chennai & New Image Computer Education</p>
+                  <p className="text-gray-600 text-lg font-medium mb-2">Aalim Muhammed Salegh Polytechnic College, Avadi</p>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Developed desktop applications and web solutions. Gained practical experience in software development and training.
+                    Foundation teaching experience in computer science subjects. Developed curriculum and teaching methodologies while pursuing advanced research interests.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {['Software Development', 'Web Applications', 'Training', 'Project Management'].map((subject, index) => (
+                    {['Foundation Teaching', 'Curriculum Development', 'Computer Science', 'Student Mentoring'].map((subject, index) => (
                       <span key={index} className="bg-orange-50 text-orange-700 px-3 py-1 rounded-lg text-sm font-medium">
                         {subject}
                       </span>
@@ -364,28 +364,28 @@ const Portfolio: React.FC = () => {
           <div className="text-center mb-16">
             <h3 className="text-5xl font-bold text-gray-900 mb-4">Research Excellence</h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Leading research in cloud security, cryptography, and blockchain technology with extensive publications and international collaborations.
+              Leading research in autonomous systems, federated learning, and robotics with funded projects from premier institutions like NSTL and IIT Indore.
             </p>
           </div>
           
-          {/* High Impact Publications */}
+          {/* Autonomous Surface Vehicle Project */}
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden mb-12 group hover:shadow-blue-200/50 transition duration-700">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative overflow-hidden">
                 <img 
                   src="/img2.png" 
-                  alt="Cloud Security Research"
+                  alt="Autonomous Surface Vehicle Research"
                   className="w-full h-96 object-cover group-hover:scale-105 transition duration-700"
                 />
               </div>
               <div className="p-12">
-                <p className="text-sm text-gray-500 mb-2 font-semibold tracking-wide">01 / HIGH IMPACT PUBLICATIONS</p>
-                <h4 className="text-3xl font-bold text-gray-900 mb-6">Cloud Security & Cryptography Research</h4>
+                <p className="text-sm text-gray-500 mb-2 font-semibold tracking-wide">01 / FUNDED RESEARCH PROJECT</p>
+                <h4 className="text-3xl font-bold text-gray-900 mb-6">Renewable Energy Powered Autonomous Smart Ocean Surface Vehicle</h4>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  Published 19 high-impact journal papers including SCI-indexed publications in Springer, IEEE, and MDPI journals. Research focuses on hybrid cryptographic access control, blockchain security, and AI-enabled IoT systems.
+                  Developed Arduino-based Autonomous Surface Water Vehicle with high-definition live transmitted camera for coastal surveillance and deep sea monitoring. Integrated GPS module for location tracking and real-time data transmission capabilities.
                 </p>
                 <div className="space-y-3">
-                  {['19 SCIE Journal Publications', 'Springer & IEEE Transactions', 'Impact Factors up to 7.104', 'International Collaborations'].map((achievement, index) => (
+                  {['NSTL & Dr.M.G.R University Funded', 'Embedded C & Web Technologies', 'GPS Navigation System', 'Coastal Surveillance Application'].map((achievement, index) => (
                     <div key={index} className="flex items-center gap-3 group/skill">
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full group-hover/skill:scale-125 transition duration-300"></div>
                       <span className="text-gray-700 font-medium">{achievement}</span>
@@ -396,17 +396,17 @@ const Portfolio: React.FC = () => {
             </div>
           </div>
 
-          {/* Research Supervision & Grants */}
+          {/* Underwater Bio Mimics Robot */}
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden group hover:shadow-blue-200/50 transition duration-700">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="p-12 order-2 lg:order-1">
-                <p className="text-sm text-gray-500 mb-2 font-semibold tracking-wide">02 / RESEARCH SUPERVISION & GRANTS</p>
-                <h4 className="text-3xl font-bold text-gray-900 mb-6">Doctoral Supervision & Funded Projects</h4>
+                <p className="text-sm text-gray-500 mb-2 font-semibold tracking-wide">02 / IIT INDORE COLLABORATION</p>
+                <h4 className="text-3xl font-bold text-gray-900 mb-6">Underwater Bio Mimics Robot for Naval Surveillance</h4>
                 <p className="text-gray-600 leading-relaxed mb-8">
-                  Currently supervising 6 PhD scholars in AI, cybersecurity, and deep learning domains. Co-PI on international funded project with UTAR Malaysia focusing on multimodal machine learning for healthcare applications.
+                  Developed Arduino-based Autonomous Underwater Bio Mimics Robot simulating fish behavior with obstacle avoidance capabilities. Designed for surveillance, seabed network mapping, and underwater resource scanning applications.
                 </p>
                 <div className="space-y-3">
-                  {['6 PhD Scholars Under Guidance', 'UTAR Malaysia Collaboration (RM24,000)', 'Anna University Research Supervisor', 'AI & Cybersecurity Focus Areas'].map((achievement, index) => (
+                  {['IIT Indore Collaboration', 'Bio-Mimics Technology', 'Obstacle Avoidance System', 'Naval Surveillance Ready'].map((achievement, index) => (
                     <div key={index} className="flex items-center gap-3 group/skill">
                       <div className="w-3 h-3 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full group-hover/skill:scale-125 transition duration-300"></div>
                       <span className="text-gray-700 font-medium">{achievement}</span>
@@ -417,30 +417,30 @@ const Portfolio: React.FC = () => {
               <div className="relative overflow-hidden order-1 lg:order-2">
                 <img 
                   src="/img3.png" 
-                  alt="Research Supervision"
+                  alt="Underwater Bio Mimics Robot"
                   className="w-full h-96 object-cover group-hover:scale-105 transition duration-700"
                 />
               </div>
             </div>
           </div>
 
-          {/* Research Statistics */}
+          {/* Publications Statistics */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">19</div>
-              <p className="text-gray-600 font-medium">SCIE Publications</p>
-            </div>
-            <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
-              <div className="text-4xl font-bold text-emerald-600 mb-2">16</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">4</div>
               <p className="text-gray-600 font-medium">Scopus Publications</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">67</div>
-              <p className="text-gray-600 font-medium">Conference Papers</p>
+              <div className="text-4xl font-bold text-emerald-600 mb-2">2</div>
+              <p className="text-gray-600 font-medium">Major Funded Projects</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
-              <div className="text-4xl font-bold text-orange-600 mb-2">12</div>
-              <p className="text-gray-600 font-medium">Book Chapters</p>
+              <div className="text-4xl font-bold text-purple-600 mb-2">3</div>
+              <p className="text-gray-600 font-medium">Conference Presentations</p>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-xl text-center">
+              <div className="text-4xl font-bold text-orange-600 mb-2">1</div>
+              <p className="text-gray-600 font-medium">National Workshop</p>
             </div>
           </div>
         </div>
@@ -450,8 +450,8 @@ const Portfolio: React.FC = () => {
       <section id="achievement" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h3 className="text-5xl font-bold text-gray-900 mb-4">Professional Recognition</h3>
-            <p className="text-xl text-gray-600">Awards, fellowships and professional achievements</p>
+            <h3 className="text-5xl font-bold text-gray-900 mb-4">Professional Achievements</h3>
+            <p className="text-xl text-gray-600">Awards, workshops and academic excellence</p>
           </div>
           
           <div className="relative">
@@ -502,28 +502,23 @@ const Portfolio: React.FC = () => {
             {/* Key Achievements Grid */}
             <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                {
-                  icon: Award,
-                  title: "Cybersecurity Innovator",
-                  description: "CSI Mumbai Chapter - Lifetime Award",
-                  color: "from-yellow-400 to-yellow-600"
-                },
+                
                 {
                   icon: FileText,
-                  title: "15 Patents",
-                  description: "Granted & Published Patents",
+                  title: "National Workshop",
+                  description: "Python for Higher Education",
                   color: "from-blue-400 to-blue-600"
                 },
                 {
                   icon: BookOpen,
-                  title: "Senior Research Associate",
-                  description: "UTAR Malaysia (2024-2026)",
+                  title: "Research Publications",
+                  description: "Scopus Indexed Papers",
                   color: "from-emerald-400 to-emerald-600"
                 },
                 {
                   icon: Users,
-                  title: "Research Supervisor",
-                  description: "Anna University ICE Domain",
+                  title: "Industry Experience",
+                  description: "Programming Trainer & Consultant",
                   color: "from-purple-400 to-purple-600"
                 }
               ].map((achievement, index) => (
@@ -557,14 +552,14 @@ const Portfolio: React.FC = () => {
               {
                 icon: Mail,
                 label: "EMAIL –",
-                value: "chinnasamyponnusamy@gmail.com",
-                href: "mailto:chinnasamyponnusamy@gmail.com"
+                value: "smuthukumar313@gmail.com",
+                href: "mailto:smuthukumar313@gmail.com"
               },
               {
                 icon: Phone,
                 label: "MOBILE –",
-                value: "+91 9600281664",
-                href: "tel:+919600281664"
+                value: "+91 8760624207",
+                href: "tel:+918760624207"
               },
               {
                 icon: BookOpen,
@@ -593,16 +588,16 @@ const Portfolio: React.FC = () => {
 
           {/* Address Information */}
           <div className="mt-16 bg-white rounded-3xl p-12 shadow-2xl text-center">
-            <h4 className="text-2xl font-bold text-gray-900 mb-6">Office Address</h4>
+            <h4 className="text-2xl font-bold text-gray-900 mb-6">Contact Address</h4>
             <div className="space-y-2 text-gray-600">
-              <p className="font-semibold">Department of Computer Science and Engineering</p>
-              <p>Kalasalingam Academy of Research and Education</p>
-              <p>Anand Nagar, Krishnankoil – 626 126</p>
+              <p className="font-semibold">4L/13 Mahatma Gandhi Colony</p>
+              <p>Kottai Villai Patti Road, Vickramasingapuram-627425</p>
+              <p>Ambasamudram (Tk), Tirunelveli (Dt)</p>
               <p>Tamil Nadu, India</p>
             </div>
             <div className="mt-6 pt-6 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-2">Research Supervisor ID: 4140166</p>
-              <p className="text-sm text-gray-500">Anna University - Information and Communication Engineering</p>
+              <p className="text-sm text-gray-500 mb-2">Date of Birth: 14/06/1990</p>
+              <p className="text-sm text-gray-500">Languages: Tamil & English</p>
             </div>
           </div>
         </div>
@@ -617,37 +612,37 @@ const Portfolio: React.FC = () => {
                 <div className="w-6 h-6 border-2 border-white rounded-sm"></div>
               </div>
               <div>
-                <h4 className="text-lg font-bold text-gray-900">Dr. P. Chinnasamy</h4>
-                <p className="text-sm text-gray-600">Computer Science & Engineering</p>
+                <h4 className="text-lg font-bold text-gray-900">D. Surendiran Muthukumar</h4>
+                <p className="text-sm text-gray-600">Assistant Professor & Research Scholar</p>
               </div>
             </div>
             
-<div className="flex gap-4">
-  {[Mail, Phone, Linkedin].map((Icon, index) => (
-    Icon === Linkedin ? (
-      <a
-        key={index}
-        href="https://www.linkedin.com/in/dr-p-chinnasamy-52674b3b " // 🔗 replace with your LinkedIn profile
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-12 h-12 bg-gray-100 hover:bg-blue-100 rounded-full flex items-center justify-center transition duration-300 cursor-pointer group"
-      >
-        <Icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition duration-300" />
-      </a>
-    ) : (
-      <div
-        key={index}
-        className="w-12 h-12 bg-gray-100 hover:bg-blue-100 rounded-full flex items-center justify-center transition duration-300 cursor-pointer group"
-      >
-        <Icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition duration-300" />
-      </div>
-    )
-  ))}
-</div>
+            <div className="flex gap-4">
+              {[Mail, Phone, Linkedin].map((Icon, index) => (
+                Icon === Linkedin ? (
+                  <a
+                    key={index}
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-gray-100 hover:bg-blue-100 rounded-full flex items-center justify-center transition duration-300 cursor-pointer group"
+                  >
+                    <Icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition duration-300" />
+                  </a>
+                ) : (
+                  <div
+                    key={index}
+                    className="w-12 h-12 bg-gray-100 hover:bg-blue-100 rounded-full flex items-center justify-center transition duration-300 cursor-pointer group"
+                  >
+                    <Icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition duration-300" />
+                  </div>
+                )
+              ))}
+            </div>
           </div>
           
           <div className="flex justify-between items-center text-sm text-gray-500 pt-8 border-t border-gray-200">
-            <span>© 2024 Dr. P. Chinnasamy. All rights reserved.</span>
+            <span>© 2024 D. Surendiran Muthukumar. All rights reserved.</span>
             <span>Research • Innovation • Excellence</span>
           </div>
         </div>
